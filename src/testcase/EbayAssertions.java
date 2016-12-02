@@ -15,6 +15,7 @@ public class EbayAssertions {
 	static WebDriver driver=null;
 	static String actual=null;
 	static String expected=null;
+	
 	@BeforeSuite
 	public static void startWebDriver(){
 		File file=new File("F:/chromedriver.exe");
@@ -36,35 +37,41 @@ public class EbayAssertions {
 	@Test
 	public static void assertionOnEbay() throws Exception{
 		
-		actual="Please fix the errors highlighted in the fields below:";
+		expected="Please fix the errors highlighted in the fields below:";
 		WebElement ele=driver.findElement((By.id("ertx")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 		
 		ele=driver.findElement(By.id("er_email"));
-		expected=ele.getText();
-		actual="Email";
+		actual=ele.getText();
+		expected="Email";
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 		
 		ele=driver.findElement(By.id("er_remail"));
-		expected=ele.getText();
-		actual="Reenter email";
+		actual=ele.getText();
+		expected="Reenter email";
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 		
 		ele=driver.findElement(By.id("er_PASSWORD"));
-		expected=ele.getText();
-		actual="Password";
+		actual=ele.getText();
+		expected="Password";
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 		
 		ele=driver.findElement(By.id("er_firstname"));
-		expected=ele.getText();
-		actual="First name";
+		actual=ele.getText();
+		expected="First name";
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 		
 		ele=driver.findElement(By.id("er_lastname"));
-		expected=ele.getText();
-		actual="Last name";
+		actual=ele.getText();
+		expected="Last name";
 		Assert.assertEquals(actual, expected);
+		System.out.println(actual);
 	}
 	
 	/*To check for the text under error message
@@ -76,29 +83,29 @@ public class EbayAssertions {
 	 */
 	@Test
 	public static  void assertionUnderTextField(){
-		actual="Please enter your email address.";
+		expected="Please enter your email address.";
 		WebElement ele=driver.findElement((By.id("email_w")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
 		
-		actual="Don't forget to reenter your email address!";
+		expected="Don't forget to reenter your email address!";
 		 ele=driver.findElement((By.id("remail_w")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
 		
-		actual="Please enter your password.";
+		expected="Please enter your password.";
 		 ele=driver.findElement((By.id("PASSWORD_w")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
 		
-		actual="Please enter your first name.";
+		expected="Please enter your first name.";
 		 ele=driver.findElement((By.id("firstname_w")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
 		
-		actual="Please enter your last name.";
+		expected="Please enter your last name.";
 		 ele=driver.findElement((By.id("lastname_w")));
-		expected=ele.getText();
+		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
 		
 	}
