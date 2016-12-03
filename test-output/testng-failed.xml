@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.EbayAssertions">
+      <class name="testcase.Functionality">
         <methods>
+          <include name="passingDataToFields"/>
           <include name="startWebDriver"/>
-          <include name="assertionOnEbay"/>
         </methods>
-      </class> <!-- testcase.EbayAssertions -->
+      </class> <!-- testcase.Functionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -29,7 +29,7 @@ public class EbayMoveMouseOver {
 		WebElement ele=driver.findElement(By.xpath("//a[@class='rt' and contains(text(),'Motors')]"));	
 		action.moveToElement(ele).build().perform();
 		
-		Thread.sleep(9000);
+		Thread.sleep(1000);
 		
 		
 		List<WebElement> Init=driver.findElements(By.xpath("//td[contains(@class,'cat show')]/div[2]/div/div/ul/li"));
