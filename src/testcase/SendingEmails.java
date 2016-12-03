@@ -3,9 +3,6 @@ package testcase;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Properties;
-
-
-
 public class SendingEmails {
 
 	static InputStream input=null;
@@ -23,10 +20,10 @@ public class SendingEmails {
 				throw new FileNotFoundException("property file '" + propFileName + "' not found in the classpath");
 			}
 			// get the property value and print it out
-			userId1 = prop.getProperty("Email Id 1");
-			pass1 = prop.getProperty("password 1");
-			userId2 = prop.getProperty("Email Id 2");
-			pass2 = prop.getProperty("password 2");
+			userId1 = prop.getProperty("EmailId1");
+			pass1 = prop.getProperty("password1");
+			userId2 = prop.getProperty("EmailId2");
+			pass2 = prop.getProperty("password2");
 		}catch (Exception e) {
 			System.out.println("Exception: " + e);
 		}
