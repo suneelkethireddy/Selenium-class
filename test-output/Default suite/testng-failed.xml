@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.Functionality">
+      <class name="testcase.HandlingIFrames">
         <methods>
-          <include name="passingDataToFields"/>
-          <include name="startWebDriver"/>
+          <include name="testIframes"/>
         </methods>
-      </class> <!-- testcase.Functionality -->
+      </class> <!-- testcase.HandlingIFrames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
