@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.HandlingIFrames">
+      <class name="testNG.com.TestAllTheSites">
         <methods>
-          <include name="testIframes"/>
+          <include name="verifyBrowserTitleForEbay"/>
+          <include name="mouseHoveringOnElements"/>
+          <include name="forSpiceJet"/>
+          <include name="verifyBrowserTitleForAmazon"/>
+          <include name="closeTheBrowser"/>
+          <include name="verifyBrowserTitleForMacys"/>
         </methods>
-      </class> <!-- testcase.HandlingIFrames -->
+      </class> <!-- testNG.com.TestAllTheSites -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

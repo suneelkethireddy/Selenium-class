@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Only Ebay TestCases">
+		<groups>
+			<run>
+				<exclude name="amazon"></exclude>
+				<exclude name="macys"></exclude>
+				<exclude name="spicejet"></exclude>
+				<include name="Ebay" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.com.TestAllTheSites" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -44,6 +44,7 @@ public class UsingDifferentMethods {
 				WebElement cat=driver.findElement(By.xpath(we+"["+i+"]/span"));
 				System.out.println(cat.getText().toString());
 				actions.moveToElement(cat).build().perform();
+				class="nav-icon nav-arrow"
 			}
 		}
 		 */
@@ -67,8 +68,9 @@ public class UsingDifferentMethods {
 		genalizedXpath="//tbody[@role='navigation']/tr/td";
 		UsingDifferentMethods.mouseHover(genalizedXpath);
 
-		UsingDifferentMethods.startWebdriver("chrome", "http://www.amazon.com");
-		genalizedXpath="//[@id='nav-flyout-shopAll']/div[2]/span";
+		/*UsingDifferentMethods.startWebdriver("chrome", "http://www.amazon.com");
+		genalizedXpath="//[@id='nav-flyout-shopAll']/div[2]/span[2]/span";
 		UsingDifferentMethods.mouseHover(genalizedXpath);
+		 */
 	}
 }
