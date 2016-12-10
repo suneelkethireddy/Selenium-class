@@ -1,50 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="108164" started-at="2016-12-09T23:22:04Z" finished-at="2016-12-09T23:23:53Z">
+  <suite name="Default suite" duration-ms="6650" started-at="2016-12-10T20:35:13Z" finished-at="2016-12-10T20:35:20Z">
     <groups>
-      <group name="Ebay">
-        <method signature="TestAllTheSites.assertionForRegister1()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister1" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.assertionForRegister2()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister2" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.assertionForRegister3()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister3" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.assertionForRegister4()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister4" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.mouseHoveringOnElements()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="mouseHoveringOnElements" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.toGetIntoRegisterPage()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="toGetIntoRegisterPage" class="testNG.com.TestAllTheSites"/>
-        <method signature="TestAllTheSites.verifyBrowserTitleForEbay()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="verifyBrowserTitleForEbay" class="testNG.com.TestAllTheSites"/>
-      </group> <!-- Ebay -->
     </groups>
-    <test name="Only Ebay TestCases" duration-ms="108164" started-at="2016-12-09T23:22:04Z" finished-at="2016-12-09T23:23:53Z">
-      <class name="testNG.com.TestAllTheSites">
-        <test-method status="PASS" signature="assertionForRegister1()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister1" duration-ms="18122" started-at="2016-12-09T15:22:04Z" finished-at="2016-12-09T15:22:23Z">
+    <test name="Default test" duration-ms="6650" started-at="2016-12-10T20:35:13Z" finished-at="2016-12-10T20:35:20Z">
+      <class name="testNG.com.SwitchingBetweenWindows">
+        <test-method status="PASS" signature="startWebDriver()[pri:0, instance:testNG.com.SwitchingBetweenWindows@531be3c5]" name="startWebDriver" is-config="true" duration-ms="6508" started-at="2016-12-10T12:35:07Z" finished-at="2016-12-10T12:35:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertionForRegister1 -->
-        <test-method status="PASS" signature="assertionForRegister2()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister2" duration-ms="16197" started-at="2016-12-09T15:22:23Z" finished-at="2016-12-09T15:22:39Z">
+        </test-method> <!-- startWebDriver -->
+        <test-method status="PASS" signature="switchBetweenWindow()[pri:0, instance:testNG.com.SwitchingBetweenWindows@531be3c5]" name="switchBetweenWindow" duration-ms="6618" started-at="2016-12-10T12:35:13Z" finished-at="2016-12-10T12:35:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertionForRegister2 -->
-        <test-method status="PASS" signature="assertionForRegister3()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister3" duration-ms="15137" started-at="2016-12-09T15:22:39Z" finished-at="2016-12-09T15:22:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertionForRegister3 -->
-        <test-method status="PASS" signature="assertionForRegister4()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="assertionForRegister4" duration-ms="14260" started-at="2016-12-09T15:22:54Z" finished-at="2016-12-09T15:23:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertionForRegister4 -->
-        <test-method status="PASS" signature="mouseHoveringOnElements()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="mouseHoveringOnElements" duration-ms="15354" started-at="2016-12-09T15:23:08Z" finished-at="2016-12-09T15:23:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mouseHoveringOnElements -->
-        <test-method status="PASS" signature="toGetIntoRegisterPage()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="toGetIntoRegisterPage" duration-ms="15724" started-at="2016-12-09T15:23:24Z" finished-at="2016-12-09T15:23:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toGetIntoRegisterPage -->
-        <test-method status="PASS" signature="verifyBrowserTitleForEbay()[pri:0, instance:testNG.com.TestAllTheSites@69d9c55]" name="verifyBrowserTitleForEbay" duration-ms="13301" started-at="2016-12-09T15:23:39Z" finished-at="2016-12-09T15:23:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBrowserTitleForEbay -->
-      </class> <!-- testNG.com.TestAllTheSites -->
-    </test> <!-- Only Ebay TestCases -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- switchBetweenWindow -->
+      </class> <!-- testNG.com.SwitchingBetweenWindows -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

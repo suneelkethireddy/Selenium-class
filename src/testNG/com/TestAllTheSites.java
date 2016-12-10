@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class TestAllTheSites extends BaseClass {
+public class TestAllTheSites extends StartWebBrowser {
 
 	String expected,actual;
 
@@ -128,12 +128,5 @@ public class TestAllTheSites extends BaseClass {
 		WebElement ele=driver.findElement((By.id("lastname_w")));
 		actual=ele.getText();
 		Assert.assertEquals(actual, expected);
-	}
-
-	@AfterMethod
-	public void closeTheBrowser(){
-
-		driver.close();
-		driver.quit();
 	}
 }

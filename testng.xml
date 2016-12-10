@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Only Ebay TestCases">
+	<test name="Only SpiceJet TestCases1">
 		<groups>
 			<run>
 				<exclude name="amazon"></exclude>
 				<exclude name="macys"></exclude>
-				<exclude name="spicejet"></exclude>
-				<include name="Ebay" />
+				<include name="spicejet"></include>
+				<exclude name="Ebay"></exclude> 
 			</run>
 		</groups>
 		<classes>

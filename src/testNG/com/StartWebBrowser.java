@@ -13,9 +13,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Configuration;
 import org.testng.annotations.Parameters;
 
-
-
-public class BaseClass {
+public class StartWebBrowser {
 
 	static WebDriver driver=null;
 	static Alert alert=null;
@@ -24,12 +22,11 @@ public class BaseClass {
 	static String browser=null;
 	static Actions action;
 
-
 	@BeforeSuite
-   @Configuration
+	@Configuration
 	@Parameters({"browser","URL"})
 	public static  void startWebDriver(String browser,String URL){
-		
+
 		if(browser.equalsIgnoreCase("chrome")){
 			File file=new File("F:/chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver",file.getAbsolutePath());

@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNG.com.TestAllTheSites">
+      <class name="testNG.com.SwitchingBetweenWindows">
         <methods>
-          <include name="verifyBrowserTitleForEbay"/>
-          <include name="mouseHoveringOnElements"/>
-          <include name="forSpiceJet"/>
-          <include name="verifyBrowserTitleForAmazon"/>
-          <include name="closeTheBrowser"/>
-          <include name="verifyBrowserTitleForMacys"/>
+          <include name="switchBetweenWindow"/>
+          <include name="startWebDriver"/>
         </methods>
-      </class> <!-- testNG.com.TestAllTheSites -->
+      </class> <!-- testNG.com.SwitchingBetweenWindows -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
